@@ -18,6 +18,7 @@ Categorise the StackOverflow questions into various quality classes.
 we need to create dependent feature based on independent features score and AnswerCount. we are using some conditions which are given in [here](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/bc0173ad10f6be6d2690789875bee4f61f8b82fb/add_dependent_feature.ipynb) or run add_dependent_feature.ipynb
 
 **Data Cleaning**
+
 Clean the data 
 
 **Splitting test and training data**
