@@ -7,7 +7,7 @@ Problem statement given [here](https://github.com/Shubh4545/StackExchange-questi
 Categorise the StackOverflow questions into various quality classes.
 
 # Workflow of project
-## **Collection of data** 
+## **1.Collection of data** 
 
 1.Here we need to extract [data](https://drive.google.com/drive/folders/15xd3v1mSaeGILRnpUUa2V-r2AbGp26kH) from xml file to csv file in correct format/structure. we used **ElementTree** to extract data from xm file. 
 
@@ -17,15 +17,32 @@ Categorise the StackOverflow questions into various quality classes.
 
 we need to create dependent feature based on independent features score and AnswerCount. we are using some conditions which are given in problem pdf 
 
-# #**Data Cleaning**
+## **2.Data Cleaning**
 
-Clean the data 
+2.1 During Cleaning i removed unwanted columns like ['Unnamed: 0','Unnamed: 0.1','Id','PostTypeId','AcceptedAnswerId','AnswerCount','Score']
 
-**Splitting test and training data**
+2.2 Data['Body'] contains unwanted tags we removed it
 
-**Model Training**
+2.3 we converted Body and Title feature from text to length of Text.
 
-**Model Evaluation**
+2.4 i observed data contains outlires but in this dataset context we are not removing it 
 
-**Prediction System**
+## **3.EDA**
+
+3.1 Observed dataset is distributed inbalanced way
+![inbalanced](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/2fcfd6fd68b6511b5034ededd20ef77b3b68c747/Resource/inbalalenced.png)
+
+3.2 In dataset body_text_length is distribute normally other features are skewed positive
+![body_text_length](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/f8e472eadb056d6c535593df6c92c9e3f731d6dd/Resource/body_text_length.png)
+
+3.3 View_Count have high Correlation 
+![corr](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/8c81805f0501012b1eebd650d786d74d4dc17670/Resource/corr.png)
+
+**3.Splitting test and training data**
+
+**4.Model Training**
+
+**5.Model Evaluation**
+
+**6.Prediction System**
 
