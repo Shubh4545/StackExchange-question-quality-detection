@@ -38,11 +38,26 @@ we need to create dependent feature based on independent features score and Answ
 3.3 View_Count have high Correlation 
 ![corr](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/8c81805f0501012b1eebd650d786d74d4dc17670/Resource/corr.png)
 
-**3.Splitting test and training data**
+## **4.Splitting test and training data**
 
-**4.Model Training**
 
-**5.Model Evaluation**
+**5.Model Training**
+we have trained logistic regression,Random Forest and Multinomial Naive Bayes
+and results are
+![result](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/49759e144079cf5ac1878d23e17960c7a48a8717/Resource/scores%20table.png)
 
-**6.Prediction System**
+## **5.Conclusion**
+Based on the evaluation of the three models (Random Forest, Logistic Regression, and Multinomial Naive Bayes), the following conclusions can be drawn:
+
+Random Forest has the highest train accuracy of 100% but slightly lower test accuracy of 83.12%. However, it has excellent precision, recall, and F1-scores on both train and test sets, indicating that it is a reliable model for classification tasks.
+
+Logistic Regression has a slightly lower train accuracy of 83.45% but similar test accuracy of 83.53%. Its precision, recall, and F1-scores are also reasonable, indicating that it is a good alternative to the Random Forest model.
+
+Multinomial Naive Bayes with SMOTE has the lowest test accuracy of 70.87% and lower precision, recall, and F1-scores than the other models. Therefore, it is not a recommended model for this classification task.
+
+Overall, based on the evaluation metrics, Random Forest and Logistic Regression are both good models to consider for this project, but Random Forest may be a slightly better option due to its higher train accuracy. However, it is important to also consider other factors such as computational efficiency and interpretability when making a final decision on the model to use.
+
+## **6.Future Work**
+
+Domain-specific Pre-processing: Pre-processing can be customized according to domain-specific knowledge. For example, if the task is to classify the question based on score and AnswerCount is still not perfect we can improve there
 
