@@ -52,6 +52,8 @@ and results are
 
 5.2 Feature Importance
 
+Most Important feature is View_Count 
+
 ![Feature](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/95591f43b91f2a9b1f918ad9df2c2f535963fe58/Resource/Feature%20importance.png)
 ## **5.Conclusion**
 Based on the evaluation of the three models (Random Forest, Logistic Regression, and Multinomial Naive Bayes), the following conclusions can be drawn:
