@@ -30,26 +30,24 @@ we need to create dependent feature based on independent features score and Answ
 ## **3.EDA**
 
 3.1 Observed dataset is distributed inbalanced way
-
 ![inbalanced](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/2fcfd6fd68b6511b5034ededd20ef77b3b68c747/Resource/inbalalenced.png)
 
 3.2 In dataset body_text_length is distribute normally other features are skewed positive
-
 ![body_text_length](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/f8e472eadb056d6c535593df6c92c9e3f731d6dd/Resource/body_text_length.png)
 
 3.3 View_Count have high Correlation 
-
 ![corr](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/8c81805f0501012b1eebd650d786d74d4dc17670/Resource/corr.png)
 
 ## **4.Splitting test and training data**
 
 
 **5.Model Training**
-we have trained logistic regression,Random Forest and Multinomial Naive Bayes
+5.1 we have trained logistic regression,Random Forest and Multinomial Naive Bayes
 and results are
-
 ![result](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/49759e144079cf5ac1878d23e17960c7a48a8717/Resource/scores%20table.png)
 
+5.2 Feature Importance
+![Feature](https://github.com/Shubh4545/StackExchange-question-quality-detection/blob/95591f43b91f2a9b1f918ad9df2c2f535963fe58/Resource/Feature%20importance.png)
 ## **5.Conclusion**
 Based on the evaluation of the three models (Random Forest, Logistic Regression, and Multinomial Naive Bayes), the following conclusions can be drawn:
 
